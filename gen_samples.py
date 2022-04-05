@@ -30,7 +30,7 @@ parser.add_argument('--weights_encoder_vis', default='./model/encoder_vis_epoch_
 parser.add_argument('--weights_decoder', default='./model/decoder_epoch_5.pth.tar', type=str)
 
 parser.add_argument('--img_root',  default='../Datasets/', type=str)
-parser.add_argument('--train_list', default='./datalists/cufs_list.txt', type=str)
+parser.add_argument('--train_list', default='./datalists/cufsf_list.txt', type=str)
 
 
 def main():

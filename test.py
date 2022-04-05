@@ -35,7 +35,7 @@ parser.add_argument('--seed', default=1000, type=int)
 
 parser.add_argument('--weights_lightcnn', default='./pre_train/LightCNN_29Layers_V2_checkpoint.pth.tar', type=str)
 parser.add_argument('--img_root_A', default='../Datasets/', type=str)
-parser.add_argument('--train_list_A', default='./datalists/cufs_list.txt', type=str) # CHANGE
+parser.add_argument('--train_list_A', default='./datalists/cufsf_list.txt', type=str) # CHANGE
 parser.add_argument('--img_root_B', default='./gen_images/nir', type=str)
 parser.add_argument('--train_list_B', default='./gen_images/img_list.txt', type=str)
 

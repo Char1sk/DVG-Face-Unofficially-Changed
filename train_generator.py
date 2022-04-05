@@ -33,7 +33,7 @@ parser.add_argument('--output_path', default='./results', type=str)
 parser.add_argument('--weights_lightcnn', default='./pre_train/LightCNN_29Layers_V2_checkpoint.pth.tar', type=str)
 parser.add_argument('--weights_dec', default='./pre_train/dec_epoch_45.pth.tar', type=str, help='dec is the identity sampler')
 parser.add_argument('--img_root',  default='../Datasets/', type=str)
-parser.add_argument('--train_list', default='./datalists/cufs_list.txt', type=str)
+parser.add_argument('--train_list', default='./datalists/cufsf_list.txt', type=str)
 
 
 def main():
