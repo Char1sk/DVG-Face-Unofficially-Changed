@@ -41,12 +41,13 @@ parser.add_argument('--train_list_A', default='./datalists/cufsf_list.txt', type
 parser.add_argument('--img_root_B', default='./gen_images/nir', type=str)
 parser.add_argument('--train_list_B', default='./gen_images/img_list.txt', type=str)
 
+parser.add_argument('--input', type=str)
 
 def main():
 
     global args
     args = parser.parse_args()
-    print(args)
+    # print(args)
 
     os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu_ids
     cudnn.benchmark = True
@@ -66,12 +67,12 @@ def main():
         transforms.Resize((128, 128)),
         transforms.ToTensor()
     ])
-    img = Image.open('../Datasets/CUFSF/sketches3/00003.jpg').convert('L')
+    img = Image.open(f'../Datasets/CUFSF/sketches3/{args.input}.jpg').convert('L')
     img = trans(img)
     img = img.unsqueeze(0)
     
     out = model(img)[0]
-    print(torch.argmax(out.squeeze()))
+    print(torch.argmax(out.squeeze()).item())
     
 
     # # train loader of real data
