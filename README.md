@@ -1,4 +1,8 @@
-# DVG-Face: Dual Variational Generation for HFR
+> I downloaded the reop and changed a little bit without fork. The original repo is [DVG-Face](https://github.com/BradyFU/DVG-Face)
+
+# [Unoffical] DVG-Face: Dual Variational Generation for HFR
+
+
 This repo is a [PyTorch](https://pytorch.org/) implementation of [DVG-Face: Dual Variational Generation for Heterogeneous Face Recognition](https://arxiv.org/pdf/2009.09399.pdf), which is an extension version of our previous [conference paper](https://github.com/BradyFU/DVG). Compared with the previous one, this version has more powerful performances.
 
 
